@@ -1,0 +1,104 @@
+.logo {
+  width: 100px;
+}
+
+.Header {
+  background-color: #fc6;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+}
+
+.nav-items ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items ul li {
+  color: #333;
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.nav-items ul li:hover {
+  color: #f60;
+}
+
+.nav-items ul li.cart:before {
+  content: "🛒";
+  margin-right: 5px;
+  font-size: 24px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+@media (width <= 768px) {
+  .Header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-items {
+    margin-top: 20px;
+  }
+
+  .nav-items ul li {
+    margin-right: 10px;
+  }
+}
+
+.card {
+  border-radius: 8px;
+  width: 200px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  transition: transform .3s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  height: 200px;
+}
+
+.card h2 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.card h3 {
+  color: #888;
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.card h4 {
+  color: #555;
+  margin: 5px 0;
+  font-size: .9rem;
+}
+
+.resturant-list {
+  flex-wrap: wrap;
+  display: flex;
+}
+/*# sourceMappingURL=index.3a01df49.css.map */
