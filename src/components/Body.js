@@ -36,12 +36,10 @@ const Body=()=>{
 
   }
 console.log("render")
-//How to avoid rendering a component
-// using optional chaining (?)
-// Early return
+
 if(!allResturants) return null;
-//or
-//if(!allResturants) return<h1>No rendered the page</h1>
+//if filtered resturant is given wrong 
+if(filteredResturants?.length===0)return <h1>No resturnant Macth your Filter!!</h1>
 
 
     return (allResturants?.length===0)?<Shimmer/>:(
