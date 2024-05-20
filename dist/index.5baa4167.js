@@ -27555,13 +27555,16 @@ const Body = ()=>{
         setFilteredResturants(json?.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     }
     console.log("render");
-    //conditional rendering
-    //if resturant is empty=> show Shimmer UI
-    //if resturant has data=> show actual data
-    return allResturants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+    //How to avoid rendering a component
+    // using optional chaining (?)
+    // Early return
+    if (!allResturants) return null;
+    //or
+    //if(!allResturants) return<h1>No rendered the page</h1>
+    return allResturants?.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 31,
-        columnNumber: 39
+        lineNumber: 34,
+        columnNumber: 40
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27577,7 +27580,7 @@ const Body = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 33,
+                        lineNumber: 36,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27589,13 +27592,13 @@ const Body = ()=>{
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 37,
+                        lineNumber: 40,
                         columnNumber: 7
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 32,
+                lineNumber: 35,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27606,7 +27609,7 @@ const Body = ()=>{
                         key: resturant?.info?.id,
                         __source: {
                             fileName: "src/components/Body.js",
-                            lineNumber: 45,
+                            lineNumber: 48,
                             columnNumber: 16
                         },
                         __self: undefined
@@ -27614,7 +27617,7 @@ const Body = ()=>{
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 43,
+                lineNumber: 46,
                 columnNumber: 6
             }, undefined)
         ]

@@ -36,12 +36,15 @@ const Body=()=>{
 
   }
 console.log("render")
-//conditional rendering
-//if resturant is empty=> show Shimmer UI
-//if resturant has data=> show actual data
+//How to avoid rendering a component
+// using optional chaining (?)
+// Early return
+if(!allResturants) return null;
+//or
+//if(!allResturants) return<h1>No rendered the page</h1>
 
 
-    return (allResturants.length===0)?<Shimmer/>:(
+    return (allResturants?.length===0)?<Shimmer/>:(
       <>
     <div className="search-container">
       <input type="text"
