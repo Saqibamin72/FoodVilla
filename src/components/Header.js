@@ -28,7 +28,8 @@ const Title=()=>{
          <li><Link to="/">Home</Link></li>
          <li> <Link to="/about">About</Link></li>
          <li><Link to="/contact">Contact</Link></li> 
-          <li>Cart</li>
+         <li><Link to="">Cart</Link></li> 
+          <li><Link to="/instamart">Instamart</Link></li> 
         </ul>
         
       </div> 
