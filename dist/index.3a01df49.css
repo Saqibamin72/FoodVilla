@@ -141,4 +141,22 @@
 .search-btn:hover {
   background-color: #e66900;
 }
+
+.Shimmer-card {
+  background: #d3d3d3;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display: inline-flex;
+}
+
+.error-img {
+  width: 80%;
+  height: 80%;
+}
+
+.Menu-img {
+  width: 5px;
+  height: 5px;
+}
 /*# sourceMappingURL=index.3a01df49.css.map */
