@@ -2972,28 +2972,30 @@ var _contact = require("./src/components/Contact");
 var _contactDefault = parcelHelpers.interopDefault(_contact);
 var _resturantMenu = require("./src/components/ResturantMenu");
 var _resturantMenuDefault = parcelHelpers.interopDefault(_resturantMenu);
+var _profie = require("./src/components/Profie");
+var _profieDefault = parcelHelpers.interopDefault(_profie);
 const AppLayOut = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactDefault.default).Fragment, {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 14,
+                lineNumber: 15,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 15,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "app.js",
-        lineNumber: 13,
+        lineNumber: 14,
         columnNumber: 10
     }, undefined);
 };
@@ -3003,12 +3005,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayOut, {}, void 0, false, {
             fileName: "app.js",
-            lineNumber: 21,
+            lineNumber: 22,
             columnNumber: 12
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "app.js",
-            lineNumber: 22,
+            lineNumber: 23,
             columnNumber: 17
         }, undefined),
         children: [
@@ -3016,7 +3018,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 25,
+                    lineNumber: 26,
                     columnNumber: 14
                 }, undefined)
             },
@@ -3024,15 +3026,25 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 28,
+                    lineNumber: 29,
                     columnNumber: 14
-                }, undefined)
+                }, undefined),
+                children: [
+                    {
+                        path: "profile",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profieDefault.default), {}, void 0, false, {
+                            fileName: "app.js",
+                            lineNumber: 32,
+                            columnNumber: 16
+                        }, undefined)
+                    }
+                ]
             },
             {
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 31,
+                    lineNumber: 36,
                     columnNumber: 14
                 }, undefined)
             },
@@ -3040,7 +3052,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/resturant/:resId",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resturantMenuDefault.default), {}, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 34,
+                    lineNumber: 39,
                     columnNumber: 14
                 }, undefined)
             }
@@ -3052,7 +3064,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "app.js",
-    lineNumber: 38,
+    lineNumber: 43,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3063,7 +3075,7 @@ $RefreshReg$(_c, "AppLayOut");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./src/components/Header":"hsJbF","./src/components/Body":"8yaV8","./src/components/Footer":"8pPOA","react-router-dom":"9xmpe","./src/components/About":"9R1Eu","./src/components/Error":"kvula","./src/components/Contact":"cgAOG","./src/components/ResturantMenu":"4X03l","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./src/components/Header":"hsJbF","./src/components/Body":"8yaV8","./src/components/Footer":"8pPOA","react-router-dom":"9xmpe","./src/components/About":"9R1Eu","./src/components/Error":"kvula","./src/components/Contact":"cgAOG","./src/components/ResturantMenu":"4X03l","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./src/components/Profie":"4Z8gv"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -34336,14 +34348,13 @@ var _react = require("react");
 var _shimmer = require("./Shimmer");
 var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 var _reactRouterDom = require("react-router-dom");
+var _helper = require("./utils/Helper");
+var _useOnline = require("./utils/useOnline");
+var _useOnlineDefault = parcelHelpers.interopDefault(_useOnline);
 var _s = $RefreshSig$();
 const Body = ()=>{
     _s();
     //filter algorithm
-    function filterData(searchText, resturants) {
-        const filterData = resturants.filter((resturant)=>resturant?.info?.name?.toLowerCase()?.includes(searchText.toLowerCase()));
-        return filterData;
-    }
     const [allResturants, setAllResturants] = (0, _react.useState)([]);
     const [filteredResturants, setFilteredResturants] = (0, _react.useState)([]);
     //const[resturants,setResturants]=useState([]);
@@ -34359,9 +34370,17 @@ const Body = ()=>{
         setFilteredResturants(json?.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     }
     console.log("render");
-    return allResturants?.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+    const isOnline = (0, _useOnlineDefault.default)();
+    if (!isOnline) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "please check your internet connect!!!."
+    }, void 0, false, {
         fileName: "src/components/Body.js",
         lineNumber: 29,
+        columnNumber: 12
+    }, undefined);
+    return allResturants?.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+        fileName: "src/components/Body.js",
+        lineNumber: 31,
         columnNumber: 40
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -34378,25 +34397,25 @@ const Body = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 31,
+                        lineNumber: 33,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "search-btn",
                         onClick: ()=>{
-                            const data = filterData(searchText, allResturants);
+                            const data = (0, _helper.filterData)(searchText, allResturants);
                             setFilteredResturants(data);
                         },
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 35,
+                        lineNumber: 37,
                         columnNumber: 7
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 30,
+                lineNumber: 32,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34408,24 +34427,28 @@ const Body = ()=>{
                             ...resturant?.info
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 44,
+                            lineNumber: 46,
                             columnNumber: 13
                         }, undefined)
                     }, resturant?.info?.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 43,
+                        lineNumber: 45,
                         columnNumber: 16
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 41,
+                lineNumber: 43,
                 columnNumber: 6
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Body, "wApmKzLB4/k57HSpD1ZTRqIJNPg=");
+_s(Body, "HXEPJrkHwzhFBVIiIUu8Qn5KzrU=", false, function() {
+    return [
+        (0, _useOnlineDefault.default)
+    ];
+});
 _c = Body;
 exports.default = Body;
 var _c;
@@ -34436,14 +34459,16 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../../constants":"8eIVP","./ResturantCard":"7LKZL","react":"21dqq","./Shimmer":"g6ZGj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8eIVP":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../../constants":"8eIVP","./ResturantCard":"7LKZL","react":"21dqq","./Shimmer":"g6ZGj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./utils/Helper":"jGK8e","./utils/useOnline":"4wJgN"}],"8eIVP":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "IMG_CDN_URL", ()=>IMG_CDN_URL);
 parcelHelpers.export(exports, "Elogo", ()=>Elogo);
+parcelHelpers.export(exports, "Fetch_Menu_Url", ()=>Fetch_Menu_Url);
 parcelHelpers.export(exports, "resturantList", ()=>resturantList);
 const IMG_CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 const Elogo = "data:image/jpeg;base64,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";
+const Fetch_Menu_Url = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9713073&lng=77.5920295&restaurantId=";
 const resturantList = [
     {
         "info": {
@@ -35893,7 +35918,47 @@ $RefreshReg$(_c, "Shimmer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8pPOA":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jGK8e":[function(require,module,exports) {
+
+},{}],"4wJgN":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$3ccc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3ccc.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _s = $RefreshSig$();
+const useOnline = ()=>{
+    _s();
+    const [isOnline, setIsOnline] = (0, _react.useState)(true);
+    (0, _react.useEffect)(()=>{
+        const handleOnline = ()=>{
+            setIsOnline(true);
+        };
+        const handleOffline = ()=>{
+            setIsOnline(false);
+        };
+        window.addEventListener("online", handleOnline);
+        window.addEventListener("offline", handleOffline);
+        return ()=>{
+            window.removeEventListener("online", handleOnline);
+            window.removeEventListener("offline", handleOffline);
+        };
+    }, []);
+    return isOnline;
+};
+_s(useOnline, "mRBquyBAMh60D2Q5WI/A8/L/7j4=");
+exports.default = useOnline;
+
+  $parcel$ReactRefreshHelpers$3ccc.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8pPOA":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35932,6 +35997,8 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _profie = require("./Profie");
+var _profieDefault = parcelHelpers.interopDefault(_profie);
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
@@ -35939,20 +36006,31 @@ const About = ()=>{
                 children: "About us page"
             }, void 0, false, {
                 fileName: "src/components/About.js",
-                lineNumber: 2,
+                lineNumber: 3,
                 columnNumber: 15
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "This is React Project for Food ordering App"
             }, void 0, false, {
                 fileName: "src/components/About.js",
-                lineNumber: 4,
+                lineNumber: 5,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profieDefault.default), {}, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 6,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/About.js",
+                lineNumber: 6,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/About.js",
-        lineNumber: 2,
+        lineNumber: 3,
         columnNumber: 10
     }, undefined);
 };
@@ -35966,7 +36044,42 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kvula":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Profie":"4Z8gv"}],"4Z8gv":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$61db = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$61db.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Profile = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            children: "Profile component inside about profile"
+        }, void 0, false, {
+            fileName: "src/components/Profie.js",
+            lineNumber: 3,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Profie.js",
+        lineNumber: 2,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Profile;
+exports.default = Profile;
+var _c;
+$RefreshReg$(_c, "Profile");
+
+  $parcel$ReactRefreshHelpers$61db.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kvula":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0ba4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36084,24 +36197,15 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
 var _reactRouterDom = require("react-router-dom");
 var _constants = require("../../constants");
+var _useResturant = require("./utils/useResturant");
+var _useResturantDefault = parcelHelpers.interopDefault(_useResturant);
 var _s = $RefreshSig$();
 const ResturantMenu = ()=>{
     _s();
     const { resId } = (0, _reactRouterDom.useParams)();
-    const [resturantData, setResturantData] = (0, _react.useState)([]);
-    (0, _react.useEffect)(()=>{
-        getResturantInfo();
-    }, []);
-    async function getResturantInfo() {
-        const data = await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9713073&lng=77.5920295&restaurantId=" + resId);
-        const json = await data.json();
-        console.log(json.data);
-        //setResturant(Object.values(json?.data?.cards?.card[2]?.card?.card?.info?.id));
-        setResturantData(json);
-    }
+    const resturantData = (0, _useResturantDefault.default)(resId);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "Menu",
         children: [
@@ -36112,7 +36216,7 @@ const ResturantMenu = ()=>{
                         alt: ""
                     }, void 0, false, {
                         fileName: "src/components/ResturantMenu.js",
-                        lineNumber: 21,
+                        lineNumber: 11,
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -36122,91 +36226,66 @@ const ResturantMenu = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/components/ResturantMenu.js",
-                        lineNumber: 22,
+                        lineNumber: 12,
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: resturantData.data?.cards[2]?.card?.card?.info?.name
                     }, void 0, false, {
                         fileName: "src/components/ResturantMenu.js",
-                        lineNumber: 23,
+                        lineNumber: 13,
                         columnNumber: 12
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: resturantData.data?.cards[2]?.card?.card?.info?.city
                     }, void 0, false, {
                         fileName: "src/components/ResturantMenu.js",
-                        lineNumber: 24,
+                        lineNumber: 14,
                         columnNumber: 8
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: resturantData.data?.cards[2]?.card?.card?.info?.areaName
                     }, void 0, false, {
                         fileName: "src/components/ResturantMenu.js",
-                        lineNumber: 25,
+                        lineNumber: 15,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: resturantData.data?.cards[2]?.card?.info?.city
                     }, void 0, false, {
                         fileName: "src/components/ResturantMenu.js",
-                        lineNumber: 26,
+                        lineNumber: 16,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: resturantData?.data?.cards[2]?.card?.card?.info?.city
                     }, void 0, false, {
                         fileName: "src/components/ResturantMenu.js",
-                        lineNumber: 27,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/ResturantMenu.js",
-                lineNumber: 20,
+                lineNumber: 10,
                 columnNumber: 9
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: "Menu"
-                    }, void 0, false, {
-                        fileName: "src/components/ResturantMenu.js",
-                        lineNumber: 33,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                        children: [
-                            " ",
-                            resturantData?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.itemCards?.map((card)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    children: card?.dish?.info?.name
-                                }, card?.dish?.info?.id, false, {
-                                    fileName: "src/components/ResturantMenu.js",
-                                    lineNumber: 34,
-                                    columnNumber: 127
-                                }, undefined))
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/ResturantMenu.js",
-                        lineNumber: 34,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
                 fileName: "src/components/ResturantMenu.js",
-                lineNumber: 32,
+                lineNumber: 22,
                 columnNumber: 6
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/ResturantMenu.js",
-        lineNumber: 19,
+        lineNumber: 9,
         columnNumber: 10
     }, undefined);
 };
-_s(ResturantMenu, "9JZ0o8QAYPFtnYSobwRTjBNvdyM=", false, function() {
+_s(ResturantMenu, "unkhlNL5PKOk8vSZ7GgfkYs+N8k=", false, function() {
     return [
-        (0, _reactRouterDom.useParams)
+        (0, _reactRouterDom.useParams),
+        (0, _useResturantDefault.default)
     ];
 });
 _c = ResturantMenu;
@@ -36219,6 +36298,41 @@ $RefreshReg$(_c, "ResturantMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../constants":"8eIVP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["hPIHA","1xC6H","igcvL"], "igcvL", "parcelRequire7f02")
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../../constants":"8eIVP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./utils/useResturant":"13LGX"}],"13LGX":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$c03e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$c03e.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _constants = require("../../../constants");
+var _s = $RefreshSig$();
+const useResturant = (resId)=>{
+    _s();
+    const [resturantData, setResturantData] = (0, _react.useState)([]);
+    (0, _react.useEffect)(()=>{
+        getResturantInfo();
+    }, []);
+    async function getResturantInfo() {
+        const data = await fetch((0, _constants.Fetch_Menu_Url) + resId);
+        const json = await data.json();
+        console.log(json.data);
+        //setResturant(Object.values(json?.data?.cards?.card[2]?.card?.card?.info?.id));
+        setResturantData(json);
+    }
+    return resturantData;
+};
+_s(useResturant, "3vvrBrRk3h7fbHpTPTzLbBT/5hM=");
+exports.default = useResturant;
+
+  $parcel$ReactRefreshHelpers$c03e.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","react":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../../constants":"8eIVP"}]},["hPIHA","1xC6H","igcvL"], "igcvL", "parcelRequire7f02")
 
 //# sourceMappingURL=index.5baa4167.js.map
