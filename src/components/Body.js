@@ -41,7 +41,7 @@ console.log("render")
  }
     return (allResturants?.length===0)?<Shimmer/>:(
       <>
-    <div className="search-container">
+    <div className="search-container p-5 bg-inherit my-5">
       <input type="text"
       className="search-input"
       placeholder="search"
@@ -51,19 +51,20 @@ console.log("render")
       }}/>
 
       <button 
-      className="search-btn"
+      className="p-2 m-2 bg-orange-300 text-white rounded-md"
       onClick={()=>{
         const data=filterData(searchText,allResturants);
         setFilteredResturants(data);
       }}>Search</button>
       </div>
      
-     <div className="resturant-list" >
+     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4" >
        {
       filteredResturants.map((resturant)=>{  
           return( 
           <Link to={"/resturant/" + resturant?.info?.id}
-            key={resturant?.info?.id}>
+            key={resturant?.info?.id}
+            className="block transform transition duration-300 hover:scale-105">
             <ResturantCard {...resturant?.info}/>
             </Link>
           );
