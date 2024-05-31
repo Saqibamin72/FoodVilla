@@ -620,7 +620,7 @@ const Section = ({ title, description })=>{
     _s();
     const [isVisible, setIsVisisble] = (0, _react.useState)(false);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "border border-black p-2 m-0",
+        className: "border border-black p-2 m-2",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 className: "font-bold text-xl",
